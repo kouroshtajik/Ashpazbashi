@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".KhoreshtHavijActivity">
+
+        <ImageView
+            android:id="@+id/imgHavij"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:src="@drawable/ic_havij"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0"/>
+        <com.example.ashpazbashi.VazirTextView
+            android:id="@+id/txtTitle"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/imgHavij"
+            android:text="  دستور پخت خورشت هویج"
+            android:textSize="20sp"/>
+        <com.example.ashpazbashi.VazirTextView
+            android:id="@+id/havijDastoor"
+            android:layout_marginRight="19dp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle"
+            android:text="@string/ggg"/>
+        <com.example.ashpazbashi.VazirTextView
+            android:id="@+id/matn"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/havijDastoor"
+            android:text="@string/dastoor"/>
+        <com.example.ashpazbashi.VazirButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/matn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="بازگشت"
+            android:background="@color/Red"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

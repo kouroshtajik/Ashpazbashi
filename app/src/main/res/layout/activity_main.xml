@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/ic_back">
+
+    <ImageView
+        android:id="@+id/coockPic"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_coock"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"/>
+    <com.example.ashpazbashi.VazirTextView
+        android:id="@+id/txtA"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/coockPic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:text="منو را انتخاب کنید"/>
+    <com.example.ashpazbashi.VazirButton
+        android:id="@+id/btn1"
+        android:layout_width="115sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="خورشت هویج"
+        android:background="@color/Red"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.8"/>
+
+    <com.example.ashpazbashi.VazirButton
+        android:id="@+id/btn2"
+        android:layout_width="115sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=" عدس پلو"
+        android:background="@color/Red"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.8"/>
+
+    <com.example.ashpazbashi.VazirButton
+        android:id="@+id/btn3"
+        android:layout_width="115sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="خورشت به"
+        android:background="@color/Red"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.8"/>
+
+    <com.example.ashpazbashi.VazirButton
+        android:id="@+id/btn4"
+        android:layout_width="115sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="پیتزا ترکی"
+        android:background="@color/Red"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.8"/>
+
+    <com.example.ashpazbashi.VazirButton
+        android:id="@+id/btn5"
+        android:layout_width="115sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="قیمه بادمجان"
+        android:background="@color/Red"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.8"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
